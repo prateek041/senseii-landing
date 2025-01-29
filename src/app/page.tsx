@@ -4,7 +4,7 @@ import { ModeToggle } from "@/components/theme.toggler";
 
 export default function Home() {
   return (
-    <div className="flex w-screen h-full justify-between">
+    <div className="flex w-screen h-full justify-between items-center">
       <div className="h-full w-full">
         <Header />
         <About />
