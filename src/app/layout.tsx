@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme.provider";
 
-const roboto = Roboto({
-  weight: ["100", "400", "500", "700"],
+const poppins = Poppins({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
   subsets: ["latin"],
 })
 
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.className} h-screen antialiased`}
+        className={`${poppins.className} h-screen antialiased`}
       >
         <ThemeProvider
           attribute="class"
