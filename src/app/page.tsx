@@ -1,4 +1,5 @@
 import Features from "@/components/features";
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Working from "@/components/how.it.works";
 
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <Features />
       <Working />
+      <Footer />
     </div>
   );
 }

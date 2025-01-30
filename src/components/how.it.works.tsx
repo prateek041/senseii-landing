@@ -5,10 +5,10 @@ import { Separator } from "./ui/separator";
 const pageContent = [
   {
     description:
-      "Tell us about your current health status using natural language.",
+      "Talk about your current health status using natural language.",
   },
   {
-    description: "We'll explain your physical state, like BMI, BMR, and TDEE.",
+    description: "Senseii will explain your physical state, like BMI, BMR, and TDEE.",
   },
   {
     description:

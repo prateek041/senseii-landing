@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme.provider";
+import Navbar from "@/components/navbar";
+import Badge from "@/components/badge";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
@@ -29,7 +31,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <div className="h-full">
+            <Badge />
+            <Navbar />
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>
