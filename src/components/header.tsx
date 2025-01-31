@@ -22,7 +22,7 @@ export default function Header() {
               everything needed for you to achieve your goals.
             </p>
             <div className="flex gap-x-2 justify-center">
-              <Link href={"https://app.senseii.in/"}>
+              <Link href={"https://tally.so/r/mVb1pg"}>
                 <Button>Try For Free</Button>
               </Link>
               <a href="mailto:prateeksingh9741@gmail.com">
