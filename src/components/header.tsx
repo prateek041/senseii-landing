@@ -13,7 +13,7 @@ export default function Header() {
         {/* Web View */}
         <div className="grid md:h-screen md:gap-y-10 items-center justify-center w-full grid-cols-6 grid-rows-6 ">
           <div className="row-start-1 flex flex-col md:gap-y-4 row-end-5 md:col-start-2 md:col-end-6 col-span-full">
-            <h1 className="text-center md:font-semibold xl:text-7xl md:text-6xl font-medium text-4xl">
+            <h1 className="text-center md:font-semibold xl:text-7xl md:text-6xl font-medium text-4xl text-secondary-foreground">
               Unlock Your Best Self with Personalized Plans and real time
               tracking.
             </h1>
