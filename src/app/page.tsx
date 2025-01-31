@@ -2,6 +2,7 @@ import Features from "@/components/features";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Working from "@/components/how.it.works";
+import Why from "@/components/why";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Header />
       <Features />
       <Working />
+      <Why />
       <Footer />
     </div>
   );

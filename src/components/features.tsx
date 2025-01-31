@@ -4,7 +4,7 @@ import { Separator } from "./ui/separator";
 
 const FeatureCard = ({ heading, index, content }: { heading: string, index: number, content: string }) => {
   return (
-    <Card className="col-span-1 h-full">
+    <Card className="md:col-span-2 row-span-1 col-span-1 h-full">
       <CardHeader className="md:gap-y-5">
         <Badge className="w-fit" variant={"secondary"}>
           0{index + 1}:
@@ -52,7 +52,7 @@ export default function Features() {
             time, AI driven progress tracking
           </p>
         </div>
-        <div className="md:grid grid-cols-4 grid-rows-1 gap-x-2 flex md:h-[450px] flex-col gap-y-2 mx-auto px-2 items-end justify-center">
+        <div className="md:grid grid-cols-4 md:grid-rows-2 grid-rows-1 gap-x-2 flex md:-h-[600px] xl:h-[450px] flex-col gap-y-2 mx-auto px-2 items-end justify-center">
           {pageContent.map((item, index) => {
             return (
               <FeatureCard key={index} content={item.content} heading={item.heading} index={index} />

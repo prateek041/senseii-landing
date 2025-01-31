@@ -29,10 +29,9 @@ export default function Working() {
           <h3 className="md:text-4xl">
             {" "}
             Getting started with Senseii is simple! Here&apos;s how it works:
-            <Separator />
           </h3>
         </div>
-        <div className="md:flex">
+        <div className="md:flex space-y-10">
           <Image
             className="md:h-[700px] md:w-[700px]"
             src={"/mobile-demo.png"}
