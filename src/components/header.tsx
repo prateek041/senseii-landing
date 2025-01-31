@@ -32,7 +32,7 @@ export default function Header() {
           </div>
 
           <div className="md:row-start-4 md:row-end-7 row-start-4 md:h-full col-span-full flex justify-center ">
-            <video src={"/demo-video.mp4"} className="w-full md:max-w-4xl"></video>
+            <video src={"/demo-video.mov"} autoPlay={true} controls className="w-full md:max-w-4xl"></video>
           </div>
         </div>
       </div>
