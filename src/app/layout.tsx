@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme.provider";
 import Navbar from "@/components/navbar";
 import Badge from "@/components/badge";
 
@@ -25,18 +24,11 @@ export default function RootLayout({
       <body
         className={`${poppins.className} h-screen antialiased`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <div className="h-full">
-            <Badge />
-            <Navbar />
-            {children}
-          </div>
-        </ThemeProvider>
+        <div className="h-full">
+          <Badge />
+          <Navbar />
+          {children}
+        </div>
       </body>
     </html>
   );
