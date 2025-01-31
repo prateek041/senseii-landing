@@ -4,7 +4,7 @@ import { Separator } from "./ui/separator";
 
 const FeatureCard = ({ heading, index, content }: { heading: string, index: number, content: string }) => {
   return (
-    <Card className="md:col-span-2 row-span-1 col-span-1 h-full">
+    <Card className="md:col-span-2 xl:col-span-1 row-span-2 col-span-1 h-full">
       <CardHeader className="md:gap-y-5">
         <Badge className="w-fit" variant={"secondary"}>
           0{index + 1}:

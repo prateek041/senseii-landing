@@ -23,7 +23,7 @@ const pageContent = [
 export default function Working() {
   return (
     <div className="container flex flex-col w-full items-center justify-center text-center py-5 mx-auto">
-      <div className="flex flex-col w-full items-center justify-between gap-y-32">
+      <div className="flex flex-col w-full items-center justify-between md:gap-y-32 gap-y-12">
         <div className="space-y-2">
           <Badge variant="outline">How it works</Badge>
           <h3 className="md:text-4xl">
@@ -31,11 +31,11 @@ export default function Working() {
             Getting started with Senseii is simple! Here&apos;s how it works:
           </h3>
         </div>
-        <div className="md:flex space-y-10">
+        <div className="flex md:flex-row flex-col items-center bg-red-50 gap-x-4 space-y-8 md:space-y-10 mx-2">
           <Image
-            className="md:h-[700px] md:w-[700px]"
+            className="p-2 rounded-2xl bg-zinc-400"
             src={"/mobile-demo.png"}
-            height={400}
+            height={600}
             width={400}
             alt="running image of senseii on a mobile phone"
           />
