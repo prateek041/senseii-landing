@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "./ui/button";
 
 export default function Header() {
@@ -21,8 +22,12 @@ export default function Header() {
               everything needed for you to achieve your goals.
             </p>
             <div className="flex gap-x-2 justify-center">
-              <Button className="text-sm">Try for Free</Button>
-              <Button variant={"outline"}>Talk to the Team</Button>
+              <Link href={"https://app.senseii.in/"}>
+                <Button>Try For Free</Button>
+              </Link>
+              <a href="mailto:prateeksingh9741@gmail.com">
+                <Button variant={"outline"}>Talk to the Team</Button>
+              </a>
             </div>
           </div>
 
