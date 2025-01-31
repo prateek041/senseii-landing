@@ -31,7 +31,7 @@ export default function Working() {
             Getting started with Senseii is simple! Here&apos;s how it works:
           </h3>
         </div>
-        <div className="flex md:flex-row flex-col items-center bg-red-50 gap-x-4 space-y-8 md:space-y-10 mx-2">
+        <div className="flex md:flex-row flex-col items-center gap-x-4 space-y-8 md:space-y-10 mx-2">
           <Image
             className="p-2 rounded-2xl bg-zinc-400"
             src={"/mobile-demo.png"}
