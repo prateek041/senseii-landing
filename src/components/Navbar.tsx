@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import { ModeToggle } from "./toggle-mode";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -53,19 +54,24 @@ const Navbar = () => {
           </nav>
         </div>
 
-        <div className="hidden md:flex items-center">
-          <Link href="https://tally.so/r/mVb1pg">
-            <Button size="sm">Get Started</Button>
-          </Link>
+        <div className="flex gap-x-2">
+          <ModeToggle />
+
+          <div className="hidden md:flex items-center">
+            <Link href="https://tally.so/r/mVb1pg">
+              <Button size="sm">Get Started</Button>
+            </Link>
+          </div>
+
+          <button
+            className="md:hidden"
+            onClick={toggleMenu}
+            aria-label="Toggle menu"
+          >
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
 
-        <button
-          className="md:hidden"
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
-        >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
       </div>
 
       {/* Mobile menu */}
