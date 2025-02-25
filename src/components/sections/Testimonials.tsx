@@ -3,25 +3,29 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "SaaSify has completely transformed how our team collaborates. The intuitive interface and powerful features have boosted our productivity by 35%.",
+    quote:
+      "SaaSify has completely transformed how our team collaborates. The intuitive interface and powerful features have boosted our productivity by 35%.",
     author: "Sarah Johnson",
-    role: "CEO, TechStart Inc."
+    role: "CEO, TechStart Inc.",
   },
   {
-    quote: "As a small business owner, I was looking for an affordable solution that wouldn't compromise on features. SaaSify delivered exactly that and more.",
+    quote:
+      "As a small business owner, I was looking for an affordable solution that wouldn&apos;t compromise on features. SaaSify delivered exactly that and more.",
     author: "Michael Chen",
-    role: "Founder, GreenLeaf Solutions"
+    role: "Founder, GreenLeaf Solutions",
   },
   {
-    quote: "The analytics provided by SaaSify have given us insights we never had before. We've been able to optimize our workflow and cut costs significantly.",
+    quote:
+      "The analytics provided by SaaSify have given us insights we never had before. We&apos;ve been able to optimize our workflow and cut costs significantly.",
     author: "Emily Rodriguez",
-    role: "Operations Director, BlueWave Media"
+    role: "Operations Director, BlueWave Media",
   },
   {
-    quote: "The customer support team at SaaSify is exceptional. They're responsive, knowledgeable, and genuinely care about helping us succeed.",
+    quote:
+      "The customer support team at SaaSify is exceptional. They&apos;re responsive, knowledgeable, and genuinely care about helping us succeed.",
     author: "David Thompson",
-    role: "IT Manager, Global Enterprises"
-  }
+    role: "IT Manager, Global Enterprises",
+  },
 ];
 
 const Testimonials = () => {
@@ -34,7 +38,8 @@ const Testimonials = () => {
               Trusted by Businesses Worldwide
             </h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground">
-              Don't just take our word for it. Here's what our customers have to say.
+              Don&apos;t just take our word for it. Here&apos;s what our
+              customers have to say.
             </p>
           </div>
         </div>
@@ -50,7 +55,9 @@ const Testimonials = () => {
               <CardFooter className="border-t pt-4">
                 <div>
                   <p className="font-medium">{testimonial.author}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {testimonial.role}
+                  </p>
                 </div>
               </CardFooter>
             </Card>
