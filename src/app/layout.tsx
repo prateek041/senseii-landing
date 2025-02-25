@@ -1,64 +1,96 @@
+// app/layout.tsx
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/navbar";
-import Badge from "@/components/badge";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
-const poppins = Poppins({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Senseii - AI-Powered Health & Lifestyle",
+  metadataBase: new URL("https://www.senseii.in"),
+  title: "Senseii - Your AI Health & Fitness Coach",
   description:
-    "Senseii is an AI-driven platform democratizing healthcare and lifestyle through personalized diet and workout plans, real-time tracking, and expert guidance.",
+    "Transform your health with Senseii's AI-powered personalized fitness plans, nutrition guidance, and real-time progress tracking. Get custom workout routines and meal plans tailored to your goals.",
   keywords: [
-    "Senseii",
-    "AI healthcare",
-    "nutrition",
-    "workout",
-    "fitness",
-    "health",
-    "lifestyle",
+    "AI fitness coach",
+    "personalized workout plans",
+    "custom meal planning",
+    "health tracking app",
+    "AI nutrition guide",
+    "fitness goals",
+    "personal trainer AI",
+    "diet planning",
+    "workout tracking",
+    "health optimization",
+    "AI health coach",
+    "fitness technology",
   ],
+  authors: [{ name: "Senseii Team" }],
+  creator: "Senseii",
+  publisher: "Senseii",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
-    title: "Senseii - AI-Powered Health & Lifestyle",
+    type: "website",
+    locale: "en_US",
+    url: "https://www.senseii.in",
+    title: "Senseii - AI-Powered Health & Fitness Coach",
     description:
-      "A group of AI agents working together to guide users toward a healthier life, with personalized diet and workout plans.",
-    url: "https://www.senseii.in/senseii-pink.png",
+      "Achieve your fitness goals with personalized AI coaching. Get custom workout plans, nutrition guidance, and real-time progress tracking tailored to your needs.",
+    siteName: "Senseii",
     images: [
       {
-        url: "/senseii-pink.png",
+        url: "/senseii-pink.png", // Make sure to create this image
         width: 1200,
         height: 630,
-        alt: "Senseii: AI-Powered Healthcare",
+        alt: "Senseii: Your AI Health & Fitness Coach",
       },
     ],
-    siteName: "Senseii",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Senseii - AI-Powered Health & Lifestyle",
+    site: "@senseii_ai", // Add your Twitter handle
+    creator: "@senseii_ai",
+    title: "Senseii - Your Personal AI Health Coach",
     description:
-      "Jarvis for Health—personalized planes & real-time tracking. Achieve your fitness goals with AI-driven solutions.",
-    images: ["https://www.senseii.in/senseii-pink.png"],
+      "Transform your fitness journey with AI-powered personalized plans, real-time tracking, and expert guidance. Start your health transformation today!",
+    images: ["/twitter-image.jpg"], // Make sure to create this image
   },
+  // verification: {
+  //   google: "your-google-verification-code", // Add your Google Search Console verification code
+  // },
+  // alternates: {
+  //   canonical: "https://www.senseii.in",
+  // },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} h-screen antialiased`}>
-        <div className="h-full">
-          <Badge />
-          <Navbar />
-          {children}
-        </div>
+      <head>
+        <meta name="theme-color" content="#ffffff" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/manifest.json" />
+      </head>
+      <body className={`${inter.className}`}>
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

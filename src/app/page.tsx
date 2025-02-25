@@ -1,17 +1,20 @@
-import Features from "@/components/features";
-import Footer from "@/components/footer";
-import Header from "@/components/header";
-import Working from "@/components/how.it.works";
-import Why from "@/components/why";
+// app/page.tsx
+import Hero from '@/components/sections/Hero';
+import Features from '@/components/sections/Features';
+import Pricing from '@/components/sections/Pricing';
+// import Testimonials from '@/components/sections/Testimonials';
+import FAQ from '@/components/sections/FAQ';
+import CTA from '@/components/sections/CTA';
 
 export default function Home() {
   return (
-    <div className="h-full flex flex-col gap-y-10 w-full">
-      <Header />
+    <>
+      <Hero />
       <Features />
-      <Working />
-      <Why />
-      <Footer />
-    </div>
+      <Pricing />
+      {/* <Testimonials /> */}
+      <FAQ />
+      <CTA />
+    </>
   );
 }
