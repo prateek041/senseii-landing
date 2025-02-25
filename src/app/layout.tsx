@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     siteName: "Senseii",
     images: [
       {
-        url: "/og-image.jpg", // Make sure to create this image
+        url: "/senseii-pink.png", // Make sure to create this image
         width: 1200,
         height: 630,
         alt: "Senseii: Your AI Health & Fitness Coach",
@@ -66,12 +66,12 @@ export const metadata: Metadata = {
       "Transform your fitness journey with AI-powered personalized plans, real-time tracking, and expert guidance. Start your health transformation today!",
     images: ["/twitter-image.jpg"], // Make sure to create this image
   },
-  verification: {
-    google: "your-google-verification-code", // Add your Google Search Console verification code
-  },
-  alternates: {
-    canonical: "https://www.senseii.in",
-  },
+  // verification: {
+  //   google: "your-google-verification-code", // Add your Google Search Console verification code
+  // },
+  // alternates: {
+  //   canonical: "https://www.senseii.in",
+  // },
 };
 
 export default function RootLayout({
