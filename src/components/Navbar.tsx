@@ -19,31 +19,44 @@ const Navbar = () => {
         <div className="flex items-center gap-6">
           <Link href="/" className="flex items-center space-x-2">
             <div className="flex items-center gap-x-1">
-              <Image src={"/senseii-pink.png"} height={30} width={30} alt="logo" />
+              <Image
+                src={"/senseii-pink.png"}
+                height={30}
+                width={30}
+                alt="logo"
+              />
               <span className="font-bold text-xl">Senseii</span>
             </div>
           </Link>
           <nav className="hidden md:flex gap-6">
-            <Link href="#features" className="text-sm font-medium hover:text-primary">
+            <Link
+              href="#features"
+              className="text-sm font-medium hover:text-primary"
+            >
               Features
             </Link>
-            <Link href="#pricing" className="text-sm font-medium hover:text-primary">
+            <Link
+              href="#pricing"
+              className="text-sm font-medium hover:text-primary"
+            >
               Pricing
             </Link>
             {/* <Link href="#testimonials" className="text-sm font-medium hover:text-primary"> */}
             {/*   Testimonials */}
             {/* </Link> */}
-            <Link href="#faq" className="text-sm font-medium hover:text-primary">
+            <Link
+              href="#faq"
+              className="text-sm font-medium hover:text-primary"
+            >
               FAQ
             </Link>
           </nav>
         </div>
 
-        <div className="hidden md:flex items-center gap-4">
-          <Button variant="ghost" size="sm">
-            Log in
-          </Button>
-          <Button size="sm">Sign up</Button>
+        <div className="hidden md:flex items-center">
+          <Link href="https://tally.so/r/mVb1pg">
+            <Button size="sm">Get Started</Button>
+          </Link>
         </div>
 
         <button
@@ -87,13 +100,12 @@ const Navbar = () => {
             >
               FAQ
             </Link>
-            <div className="flex flex-col space-y-2 pt-2">
-              <Button variant="ghost" size="sm" className="justify-start">
-                Log in
-              </Button>
-              <Button size="sm" className="justify-start">
-                Sign up
-              </Button>
+            <div className="pt-2">
+              <Link href="https://tally.so/r/mVb1pg">
+                <Button size="sm" className="w-full">
+                  Get Started
+                </Button>
+              </Link>
             </div>
           </nav>
         </div>

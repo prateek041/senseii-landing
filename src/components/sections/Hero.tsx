@@ -33,7 +33,7 @@ const Hero = () => {
           <div className="relative w-full max-w-3xl overflow-hidden rounded-lg border shadow-xl">
             <div className="bg-muted aspect-video"></div>
             <div className="absolute inset-0 flex items-center justify-center">
-              <video src={"/demo-video.mov"} autoPlay={true} controls className="w-full md:max-w-4xl"></video>
+              <video src={"/demo.mp4"} autoPlay={false} controls className="w-full md:max-w-4xl"></video>
             </div>
           </div>
         </div>

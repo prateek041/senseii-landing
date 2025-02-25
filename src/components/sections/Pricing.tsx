@@ -1,6 +1,14 @@
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import Link from "next/link";
 
 const plans = [
   {
@@ -15,12 +23,13 @@ const plans = [
       "24/7 email support",
     ],
     popular: false,
-    buttonText: "Get Started"
+    buttonText: "Get Started",
   },
   {
     name: "Professional",
     price: "$299",
-    description: "For fitness enthusiasts willing to achieve their long term goals.",
+    description:
+      "For fitness enthusiasts willing to achieve their long term goals.",
     features: [
       "Up to 10 Goals supported",
       "Get your Plans generated",
@@ -29,10 +38,10 @@ const plans = [
       "Access Real time tracking",
       "Priority support",
       "Integrate with other Apps",
-      "Compete with your peers"
+      "Compete with your peers",
     ],
     popular: true,
-    buttonText: "Get Started"
+    buttonText: "Get Started",
   },
   {
     name: "Family",
@@ -53,8 +62,8 @@ const plans = [
       "Advanced security features",
     ],
     popular: false,
-    buttonText: "Contact Sales"
-  }
+    buttonText: "Contact Sales",
+  },
 ];
 
 const Pricing = () => {
@@ -67,7 +76,8 @@ const Pricing = () => {
               Simple, Transparent Pricing
             </h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground">
-              Choose the perfect plan for your business needs. No hidden fees, no surprises.
+              Choose the perfect plan for your business needs. No hidden fees,
+              no surprises.
             </p>
           </div>
         </div>
@@ -75,7 +85,8 @@ const Pricing = () => {
           {plans.map((plan, index) => (
             <Card
               key={index}
-              className={plan.popular ? 'border-primary shadow-md relative' : ''}
+              className={`flex flex-col ${plan.popular ? "border-primary shadow-md relative" : ""
+                }`}
             >
               {plan.popular && (
                 <div className="absolute top-0 right-0 md:translate-x-1/3 -translate-y-1/3 bg-primary text-primary-foreground text-xs font-bold rounded-full px-3 py-1">
@@ -90,7 +101,7 @@ const Pricing = () => {
                 </div>
                 <CardDescription>{plan.description}</CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex-grow">
                 <ul className="space-y-2 text-sm">
                   {plan.features.map((feature, i) => (
                     <li key={i} className="flex items-center">
@@ -100,13 +111,15 @@ const Pricing = () => {
                   ))}
                 </ul>
               </CardContent>
-              <CardFooter >
-                <Button
-                  variant={plan.popular ? "default" : "outline"}
-                  className="w-full"
-                >
-                  {plan.buttonText}
-                </Button>
+              <CardFooter>
+                <Link className="w-full" href={"https://tally.so/r/mVb1pg"}>
+                  <Button
+                    variant={plan.popular ? "default" : "outline"}
+                    className="w-full"
+                  >
+                    {plan.buttonText}
+                  </Button>
+                </Link>
               </CardFooter>
             </Card>
           ))}

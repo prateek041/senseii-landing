@@ -14,37 +14,31 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="flex md:flex flex-row bg-red-400 items-center justify-between px-2">
+          <div className="flex md:flex flex-row items-center justify-between px-2">
             <div >
               <h3 className="font-medium mb-4">Product</h3>
               <ul className="space-y-2">
-                <li><Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Features</Link></li>
-                <li><Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Pricing</Link></li>
-                <li><Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Integrations</Link></li>
-                <li><Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Changelog</Link></li>
-                <li><Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Roadmap</Link></li>
+                <li><Link href="#features" className="text-sm text-muted-foreground hover:text-foreground">Features</Link></li>
+                <li><Link href="#pricing" className="text-sm text-muted-foreground hover:text-foreground">Pricing</Link></li>
+                <li><Link href="https://github.com/Senseii-ai" className="text-sm text-muted-foreground hover:text-foreground">Roadmap</Link></li>
               </ul>
             </div>
 
             <div>
               <h3 className="font-medium mb-4">Resources</h3>
               <ul className="space-y-2">
-                <li><Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Documentation</Link></li>
-                <li><Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Guides</Link></li>
-                <li><Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Support</Link></li>
-                <li><Link href="#" className="text-sm text-muted-foreground hover:text-foreground">API</Link></li>
-                <li><Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Community</Link></li>
+                <li><Link href="https://github.com/Senseii-ai" className="text-sm text-muted-foreground hover:text-foreground">Documentation</Link></li>
+                <li><Link href="https://github.com/Senseii-ai" className="text-sm text-muted-foreground hover:text-foreground">Guides</Link></li>
+                <li><a href="mailto:prateeksingh9741@gmail.com" className="text-sm text-muted-foreground hover:text-foreground">Support</a></li>
               </ul>
             </div>
 
             <div>
               <h3 className="font-medium mb-4">Company</h3>
               <ul className="space-y-2">
-                <li><Link href="#" className="text-sm text-muted-foreground hover:text-foreground">About</Link></li>
-                <li><Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Blog</Link></li>
-                <li><Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Careers</Link></li>
-                <li><Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Contact</Link></li>
-                <li><Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Partners</Link></li>
+                <li><Link href="https://github.com/Senseii-ai" className="text-sm text-muted-foreground hover:text-foreground">About</Link></li>
+                <li><Link href="https://www.prateeksingh.tech/writings/tech/building-senseii/llm-orchestrator" className="text-sm text-muted-foreground hover:text-foreground">Blog</Link></li>
+                <li><a href="mailto:prateeksingh9741@gmail.com" className="text-sm text-muted-foreground hover:text-foreground">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -55,11 +49,11 @@ const Footer = () => {
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} senseii. All rights reserved.
           </p>
-          <div className="flex items-center gap-6">
-            <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Terms</Link>
-            <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Privacy</Link>
-            <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Cookies</Link>
-          </div>
+          {/* <div className="flex items-center gap-6"> */}
+          {/*   <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Terms</Link> */}
+          {/*   <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Privacy</Link> */}
+          {/*   <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">Cookies</Link> */}
+          {/* </div> */}
         </div>
       </div>
     </footer>
