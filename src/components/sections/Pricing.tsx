@@ -56,9 +56,7 @@ const plans = [
       "Priority support",
       "Integrate with other Apps",
       "Compete with your peers",
-      "Enterprise analytics",
       "24/7 priority support",
-      "API access",
       "Advanced security features",
     ],
     popular: false,
@@ -76,7 +74,7 @@ const Pricing = () => {
               Simple, Transparent Pricing
             </h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground">
-              Choose the perfect plan for your business needs. No hidden fees,
+              Choose the perfect plan for your or your family needs. No hidden fees,
               no surprises.
             </p>
           </div>

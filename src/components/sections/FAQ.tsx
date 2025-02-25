@@ -59,7 +59,7 @@ const FAQ = () => {
               Frequently Asked Questions
             </h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground">
-              Find answers to common questions about SaaSify.
+              Find answers to common questions about Senseii.
             </p>
           </div>
         </div>
