@@ -1,8 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   BarChart3,
+  Brain,
   Clock,
-  Code,
   Cog,
   FileText,
   Globe,
@@ -12,45 +12,45 @@ import {
 
 const features = [
   {
+    icon: <FileText className="h-6 w-6" />,
+    title: "Personalized Plans",
+    description: "Get AI-powered, customized diet and workout plans tailored to your body type, fitness goals, and lifestyle."
+  },
+  {
     icon: <BarChart3 className="h-6 w-6" />,
-    title: "Advanced Analytics",
-    description: "Gain valuable insights with our comprehensive analytics dashboard."
+    title: "Track your Goals",
+    description: "If you have any specific goals, track them over a week, month or even years."
+  },
+  {
+    icon: <Brain className="h-6 w-6" />,
+    title: "Understand Yourself",
+    description: `No more guessing what your vitals mean. Senseii explains it for you.`
+  },
+  {
+    icon: <Clock className="h-6 w-6" />,
+    title: "Real Time Coaching",
+    description: `Get Workout Feedback in Real Time. Know when you are exerting yourself, or can do better.`
+  },
+  {
+    icon: <Zap className="h-6 w-6" />,
+    title: "Natural Language Interface",
+    description: "Interact with the app in your native language, No need for manual calorie counting as well. Just type what you ate in simple words "
+  },
+  {
+    icon: <Cog className="h-6 w-6" />,
+    title: "Universal Integration",
+    description: "Auto-Sync with other tools like MyFitnessPal, Strava, Oura, etc., and get weekly health summaries on both platforms iOS and Android."
+  },
+  {
+    icon: <Globe className="h-6 w-6" />,
+    title: "24x7 Support",
+    description: "Our team is available round the clock to answer your queries, provide guidance, and keep you motivated on your health journey."
   },
   {
     icon: <ShieldCheck className="h-6 w-6" />,
     title: "Enterprise Security",
     description: "Keep your data safe with our enterprise-grade security protocols."
   },
-  {
-    icon: <Zap className="h-6 w-6" />,
-    title: "Lightning Fast",
-    description: "Experience blazing-fast performance with our optimized infrastructure."
-  },
-  {
-    icon: <Globe className="h-6 w-6" />,
-    title: "Global Reach",
-    description: "Connect with customers around the world with our CDN-backed platform."
-  },
-  {
-    icon: <Clock className="h-6 w-6" />,
-    title: "24/7 Support",
-    description: "Our support team is available round the clock to assist you."
-  },
-  {
-    icon: <Code className="h-6 w-6" />,
-    title: "API Access",
-    description: "Integrate with our robust API for customized solutions."
-  },
-  {
-    icon: <FileText className="h-6 w-6" />,
-    title: "Documentation",
-    description: "Comprehensive documentation to help you get the most out of our platform."
-  },
-  {
-    icon: <Cog className="h-6 w-6" />,
-    title: "Customizable",
-    description: "Tailor the platform to your specific needs with extensive customization options."
-  }
 ];
 
 const Features = () => {
@@ -60,10 +60,10 @@ const Features = () => {
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              Powerful Features for Your Business
+              Powerful Features for Your Health
             </h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground">
-              Our platform is packed with everything you need to succeed in today's competitive market.
+              Our platform is packed with everything you need to succeed in living a healthy life.
             </p>
           </div>
         </div>

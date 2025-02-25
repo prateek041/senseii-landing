@@ -5,48 +5,52 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 const plans = [
   {
     name: "Starter",
-    price: "$12",
-    description: "Perfect for small businesses just getting started.",
+    price: "$20",
+    description: "Perfect for testing out the product.",
     features: [
-      "Up to 5 team members",
-      "10GB storage",
+      "Up to 1 Goal supported",
+      "Get your Plans generated",
+      "Natural Language Meal Tracking",
       "Basic analytics",
       "24/7 email support",
-      "API access"
     ],
     popular: false,
     buttonText: "Get Started"
   },
   {
     name: "Professional",
-    price: "$49",
-    description: "For growing teams looking to scale operations.",
+    price: "$299",
+    description: "For fitness enthusiasts willing to achieve their long term goals.",
     features: [
-      "Up to 20 team members",
-      "50GB storage",
+      "Up to 10 Goals supported",
+      "Get your Plans generated",
+      "Natural Language Meal Tracking",
       "Advanced analytics",
+      "Access Real time tracking",
       "Priority support",
-      "API access",
-      "Custom integrations",
-      "Team collaboration tools"
+      "Integrate with other Apps",
+      "Compete with your peers"
     ],
     popular: true,
     buttonText: "Get Started"
   },
   {
-    name: "Enterprise",
-    price: "$99",
-    description: "For large organizations with complex requirements.",
+    name: "Family",
+    price: "$499",
+    description: "Enable your entire family to lead a healthy life.",
     features: [
-      "Unlimited team members",
-      "500GB storage",
+      "Up to 50 Goals",
+      "Get your Plans generated",
+      "Natural Language Meal Tracking",
+      "Advanced analytics",
+      "Access Real time tracking",
+      "Priority support",
+      "Integrate with other Apps",
+      "Compete with your peers",
       "Enterprise analytics",
       "24/7 priority support",
       "API access",
-      "Custom integrations",
-      "Team collaboration tools",
       "Advanced security features",
-      "Dedicated account manager"
     ],
     popular: false,
     buttonText: "Contact Sales"
@@ -56,7 +60,7 @@ const plans = [
 const Pricing = () => {
   return (
     <section id="pricing" className="py-20">
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container relative mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
@@ -96,7 +100,7 @@ const Pricing = () => {
                   ))}
                 </ul>
               </CardContent>
-              <CardFooter>
+              <CardFooter >
                 <Button
                   variant={plan.popular ? "default" : "outline"}
                   className="w-full"

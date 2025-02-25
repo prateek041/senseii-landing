@@ -16,10 +16,10 @@ const CTA = () => {
           </div>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button size="lg" className="bg-background text-foreground hover:bg-background/90">
-              Start Free Trial
+              Join Waitlist
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10">
+            <Button size="lg" className="border-primary-foreground border text-primary-foreground hover:bg-primary-foreground hover:text-primary">
               Schedule Demo
             </Button>
           </div>

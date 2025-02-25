@@ -6,9 +6,22 @@ import {
 } from "@/components/ui/accordion";
 
 const faqs = [
+  { question: "What are goals?", answer: "Goals define what you want to achieve with your health and fitness. Whether it is loosing weight, gaining muscles or maintaining your current physical state." },
+  {
+    question: "How does Senseii personalize my fitness plan?",
+    answer: "Depending on your goals, Senseii will intelligently ask you questions regarding your diet preferences, lifestyle, allergies, likings/dislikings, equipment availability and so on. The plans will be generated keeping them in mind."
+  },
+  {
+    question: "Can I alter my plans later on?",
+    answer: "Yes, Senseii is smart enough to encorporate changes in your plans in real time, still keeping you on the timeline for your goals."
+  },
+  {
+    question: "Do I need special equipments?",
+    answer: "The plans are generated keeping your preferences in mind, whether you have equipments available or not will decide what is included in the plans."
+  },
   {
     question: "How does the pricing work?",
-    answer: "Our pricing is subscription-based, billed monthly or annually. We offer different tiers to accommodate businesses of all sizes. You can start with our free trial to test the platform before committing."
+    answer: "Our pricing is subscription-based, billed monthly or annually. We offer different tiers to accommodate users of all requirements. You can start with our free trial to test the platform before committing."
   },
   {
     question: "Can I upgrade or downgrade my plan?",
@@ -24,20 +37,16 @@ const faqs = [
   },
   {
     question: "Do you offer customer support?",
-    answer: "Yes, all plans include customer support. Our Starter plan includes email support with a 24-hour response time. Professional and Enterprise plans include priority support with faster response times and additional support channels."
+    answer: "Yes, all plans include customer support. Our Starter plan includes email support with a 24-hour response time. Professional and Family plans includes priority support with faster response times and additional support channels."
   },
   {
     question: "Can I integrate with other tools?",
-    answer: "Yes, our platform offers a range of integrations with popular business tools. We also provide a robust API for custom integrations. Our Professional and Enterprise plans include additional integration capabilities."
+    answer: "Yes, our platform offers a range of integrations with popular health and fitness tools. Our Professional and Enterprise plans include additional integration capabilities giving you access to Senseii Mobile App to automate syncing with other apps"
   },
   {
     question: "What happens to my data if I cancel?",
     answer: "If you cancel your subscription, you'll have 30 days to export your data. After that period, we'll delete your data from our systems in accordance with our data retention policy and privacy commitments."
   },
-  {
-    question: "Is training available for my team?",
-    answer: "Yes, we provide comprehensive documentation and video tutorials for all users. Enterprise plans also include personalized onboarding and training sessions for your team."
-  }
 ];
 
 const FAQ = () => {

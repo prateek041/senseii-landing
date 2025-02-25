@@ -30,9 +30,9 @@ const Navbar = () => {
             <Link href="#pricing" className="text-sm font-medium hover:text-primary">
               Pricing
             </Link>
-            <Link href="#testimonials" className="text-sm font-medium hover:text-primary">
-              Testimonials
-            </Link>
+            {/* <Link href="#testimonials" className="text-sm font-medium hover:text-primary"> */}
+            {/*   Testimonials */}
+            {/* </Link> */}
             <Link href="#faq" className="text-sm font-medium hover:text-primary">
               FAQ
             </Link>
@@ -73,13 +73,13 @@ const Navbar = () => {
             >
               Pricing
             </Link>
-            <Link
-              href="#testimonials"
-              className="text-sm font-medium hover:text-primary"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Testimonials
-            </Link>
+            {/* <Link */}
+            {/*   href="#testimonials" */}
+            {/*   className="text-sm font-medium hover:text-primary" */}
+            {/*   onClick={() => setIsMenuOpen(false)} */}
+            {/* > */}
+            {/*   Testimonials */}
+            {/* </Link> */}
             <Link
               href="#faq"
               className="text-sm font-medium hover:text-primary"
